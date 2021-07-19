@@ -1,0 +1,289 @@
+
+ ul , li {
+    list-style-type: none;
+}
+
+/* =============Comman-Css================== */
+
+
+input {
+    border: none;
+    box-shadow: 0 0 4px #ccc;
+    padding: 10px 15px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #ccc;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+
+/* ===========Side-bar-css-Start============== */
+
+.merchant__navbar {
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 0 0 8px rgb(233, 233, 233);
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.merchant__navbar::-webkit-scrollbar{
+    display: none;
+}
+
+.merchant__navbar-logo {
+    margin-bottom: 50px;
+}
+
+.merchant__navbar-logo h1 {
+    color: #B577F6;
+    font-family: "Righteous";
+    font-size: 40px;
+}
+
+.merchant__navbar-logo a img {
+    width: 50px;
+}
+
+.merchant__navbar-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.merchant__navbar-profile .merchant__navbar-avatar {
+    margin-right: 15px;
+}
+.merchant__navbar-avatar{
+    width: 55px;
+}
+.merchant__navbar-profile .merchant__navbar-namepos h5 {
+    color: #ccc;
+}
+
+.merchant__navbar-sidenav ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding:15px 10px;
+    width: 100%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.merchant__navbar-sidenav ul li:hover {
+    background-color: #B576F6;
+    color: #fff;
+}
+
+.merchant__navbar-sidenav ul li:hover a {
+    color: #fff;
+}
+
+.merchant__navbar-sidenav ul li span {
+    margin-right: 20px;
+}
+
+/* ================header-css-Start================= */
+
+header {
+    margin-left: 250px;
+    padding: 15px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 8px #ccc;
+    min-height: 80px;
+}
+
+.navbar__head-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header form {
+    position: relative;
+    width: 300px;
+    height: 45px;
+}
+
+header form input {
+    width: 100%;
+    height: 100%;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #B576F6;
+}
+
+.right-part ul {
+    display: flex;
+    align-items: center;
+}
+
+.right-part ul li {
+    margin-left: 40px;
+}
+
+.right-part ul .merchant__navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.right-part ul .merchant__navbar-user h2 {
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.right-part ul li.notifiaction span,
+.right-part ul li span {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+.right-part ul li.notifiaction span::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: #85f676;
+}
+
+/* ===============Jquery-hide-show-class=========== */
+
+.merchant__navbar.hide li a,
+.merchant__navbar.hide .merchant__navbar-namepos{
+    display: none;
+}
+
+.merchant__navbar.hide {
+    width: 100px;
+}
+
+.merchant__navbar.hide li span {
+    font-size: 22px;
+}
+
+.merchant__navbar .merchant__navbar-logo a:last-child,
+.merchant__navbar.hide .merchant__navbar-logo a:first-child {
+    display: none;
+}
+
+.merchant__navbar.hide .merchant__navbar-logo a:last-child {
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+.slide-left {
+    margin-left: 100px !important;
+}
+
+
+
+@media screen and (max-width:992px) {
+    
+    .merchant__navbar {
+        left: -250px;
+        transition: .4s;
+        z-index: 1000;
+    }
+
+    .merchant__navbar.hide {
+        left: 0;
+        width: 250px;
+    }
+
+    .merchant__navbar.hide li a,
+    .merchant__navbar.hide .merchant__navbar-namepos,
+    .merchant__navbar.hide .merchant__navbar-logo h1:first-child {
+        display: block;
+    }
+
+    .merchant__navbar.hide .merchant__navbar-logo h1:last-child {
+        display: none;
+    }
+
+    .merchant__navbar-logo {
+        margin-bottom: 30px;
+    }
+
+    header {
+        margin-left: 0;
+    }
+    
+    .slide-left {
+        margin-left: 0 !important;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+   
+    .navbar__head-inner .merchant__navbar-namepos {
+        display: none;
+    }
+
+    header form {
+        width: 150px;
+    }
+
+    header button {
+        width: 30%;
+    }
+
+
+  
+}
+
+@media screen and (max-width:475px) {
+    
+    .navbar__head-inner {
+        flex-direction: column-reverse;
+    }
+
+    .navbar__head-inner .left-part ,
+    .navbar__head-inner .right-part {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header form {
+        width: 100%;
+    }
+
+    header button {
+        width: 15%;
+    }
+
+    .right-part ul {
+        justify-content: space-between;
+    }
+
+   
+
+}

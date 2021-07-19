@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Document</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="merchant__navbar">
+        <div class="merchant__navbar-logo">
+            <a href="#">
+                <h3>CYBER NOW</h3>
+            </a>
+            <a href="#">
+                <img src="./assets/img/logo.png">
+            </a>
+        </div>
+        <div class="merchant__navbar-profile">
+            <div class="merchant__navbar-avatar">
+                <img src="./assets/img/avt.jpg">
+            </div>
+            <div class="merchant__navbar-namepos">
+                <h4>Huỳnh Dũng</h4>
+                <h6>Nhà bán hàng super vip pro</h6>
+            </div>
+        </div>
+        <div class="merchant__navbar-sidenav">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 1</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 2</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 3</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 4</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 5</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Item 6</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    <a href="#">Đăng xuất</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="navbar__head-inner">
+            <div class="left-part">
+                <form>
+                    <input type="text" placeholder="Search.." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="right-part">
+                <ul>
+                    <li class="merchant__navbar-user">
+                        <div class="merchant__navbar-avatar">
+                            <img src="./assets/img/avt.jpg" alt="" srcset="">
+                        </div>
+                        <div class="merchant__navbar-namepos">
+                            <h3>Huỳnh Dũng</h3>
+                        </div>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-envelope"></i></span>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-bell"></i></span>
+                    </li>
+                    <li>
+                        <span class="bar"><i class="fas fa-bars"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="merchant__management-order">
+
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <h3>Dashboard</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="content_table">
+            <div class="title">
+                <h2>Quản lý đơn hàng</h2>
+            </div>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search">
+                    <div class="input-group-append"><button class="btn btn-primary" type="button"><i
+                                class="fa fa-search"></i></button></div>
+                </div>
+        
+                <form class="choose-day-group">
+                    <input type="date" name="" id=""> <span style="margin-right: 10px; margin-left: 10px;">to</span><input type="date" name="" id="">
+                    <input type="submit" value="OK">
+                </form>
+            </form>
+            <div class="main">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Date created</td>
+                            <td>Order ID</td>
+                            <td>Total Price</td>
+                            <td>Status Shipper</td>
+                            <td>Status Order</td>
+                            <td>Feature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/05/2021 <br> 08:21:42 AM</td>
+                            <td>#123456789</td>
+                            <td>50.450 VND</td>
+                            <td><a href="#" class="status-order waiting">Đang tìm tài xế</a></td>
+                            <td><a href="#" class="status-order pending">Pending</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2021 <br> 09:21:42 AM</td>
+                            <td>#123456888</td>
+                            <td>58.450 VND</td>
+                            <td><a href="#" class="status-order complete">Đã giao</a></td>
+                            <td><a href="#" class="status-order complete">Complete</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2021 <br> 09:21:42 AM</td>
+                            <td>#123456888</td>
+                            <td>58.450 VND</td>
+                            <td><a href="#" class="status-order complete">Đã giao</a></td>
+                            <td><a href="#" class="status-order complete">Complete</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2021 <br> 09:21:42 AM</td>
+                            <td>#123456888</td>
+                            <td>58.450 VND</td>
+                            <td><a href="#" class="status-order complete">Đã giao</a></td>
+                            <td><a href="#" class="status-order complete">Complete</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2021 <br> 09:21:42 AM</td>
+                            <td>#123456888</td>
+                            <td>58.450 VND</td>
+                            <td><a href="#" class="status-order complete">Đã giao</a></td>
+                            <td><a href="#" class="status-order complete">Complete</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/05/2021 <br> 09:21:42 AM</td>
+                            <td>#123456888</td>
+                            <td>58.450 VND</td>
+                            <td><a href="#" class="status-order complete">Đã giao</a></td>
+                            <td><a href="#" class="status-order complete">Complete</a></td>
+                            <td class="order-feature">
+                                <span><button class="feature-button"><i class="fas fa-info-circle"></i></button></span>
+                                <span><button class="feature-button"><i class="fas fa-ellipsis-v"></i></button></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagi-order">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item ">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/sidebar.js"></script>
+</body>
+
+</html>
